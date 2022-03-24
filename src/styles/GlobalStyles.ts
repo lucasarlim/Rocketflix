@@ -7,6 +7,10 @@ export default createGlobalStyle`
         box-sizing: border-box;
         font-size: 16px;
 
+        @media (max-width: 1200px) {
+            font-size: 20px;
+        }
+
         @media (max-width: 1024px) {
             font-size: 14px;
         }
@@ -16,10 +20,12 @@ export default createGlobalStyle`
         }
     }
     
-    html {
-        width: 100vw;
-        height: 100%;
-        background: var(--background);
+    html, body, #root{
+        height: 100vh;
+
+        @media (max-width: 768px) {
+            height: auto;
+        }
     }
 
     *, button, input {

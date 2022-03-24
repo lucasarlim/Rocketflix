@@ -1,16 +1,20 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+
   width: 100vw;
   height: 100%;
+
+  background: var(--background);
+  background-size: cover;
+  overflow: auto;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  margin-top: 126px;
-  padding: 0 2rem;
+  padding: 2rem;
 
   > p {
     max-width: 381px;
@@ -20,7 +24,7 @@ export const Container = styled.div`
     color: var(--title);
     text-align: center;
 
-    margin-top: 24px;
+    margin-top: 1.5rem;
   }
 ` 
 
@@ -29,10 +33,11 @@ export const Title = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 16px;
+  margin: 5rem 0 1rem;
 
   > img {
-    width: 84px;
+    position: relative;
+    width: 5.25rem;
   }
 
   > h1 {
@@ -41,6 +46,6 @@ export const Title = styled.div`
     text-align: center;
 
     color: var(--title);
-    margin-top: 8px;
+    margin-top: 0.5rem;
   }
 `
